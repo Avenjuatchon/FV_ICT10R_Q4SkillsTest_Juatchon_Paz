@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Tracker</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, #eb7575, #a5fa7d);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 50px;
+        }
+
+        /* LEFT CARD */
+        .card {
+            background: #f5e6c8;
+            padding: 25px;
+            border-radius: 15px;
+            width: 260px;
+        }
+
+        .card h2 {
+            text-align: center;
+            color: #e83e8c;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: none;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .progress {
+            margin-top: 10px;
+            height: 10px;
+            background: green;
+            border-radius: 10px;
+        }
+
+        /* RIGHT SIDE GRAPH PLACEHOLDER */
+        .graph-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+            text-align: center;
+        }
+
+        .graph-box p {
+            color: #555;
+        }
+
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #b38f2f;
+        padding: 12px 30px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        /* LOGO */
+        .logo {
+        font-weight: bold;
+        font-size: 18px;
+        color: #8d1111;
+        }
+
+        /* LINKS */
+        .nav-links a {
+        text-decoration: none;
+        color: #ffffff;
+        margin-left: 20px;
+        font-size: 14px;
+        transition: 0.3s;
+        }
+
+        /* HOVER EFFECT */
+        .nav-links a:hover {
+        color: #2ff639;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">10-Ruby</div>
+
+    <div class="nav-links">
+        <a href="index.html">Graph</a>
+        <a href="system.html">System</a>
+        <a href="activities.html">Activities</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- FORM -->
+    <div class="card">
+        <h2>Attendance Tracker</h2>
+
+        <label>Select Day</label>
+        <select>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+        </select>
+
+        <label>Absences</label>
+        <input type="number" placeholder="Enter number">
+
+        <button>Submit</button>
+
+        <div class="progress"></div>
+    </div>
+
+    <!-- GRAPH AREA -->
+    <div class="graph-box">
+        <h3>Weekly Attendance (Absences)</h3>
+        <p> yeh </p>
+    </div>
+
+</div>
+
+</body>
+</html>
